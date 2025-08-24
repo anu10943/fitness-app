@@ -1,0 +1,36 @@
+version: "3.9"
+services:
+  backend:
+    build: ./backend
+    container_name: fitness-backend
+    env_file:
+      - ./backend/.env
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+
+  web:
+    build: ./web
+    container_name: fitness-web
+    ports:
+      - "5173:5173"
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+
+  db:
+    image: postgres:15
+    container_name: fitness-db
+    environment:
+      POSTGRES_USER: fitness
+      POSTGRES_PASSWORD: fitnesspass
+      POSTGRES_DB: fitnessdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

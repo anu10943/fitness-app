@@ -1,0 +1,8 @@
+-- migrations/init.sql
+CREATE TABLE IF NOT EXISTS bmi_entries (
+  id SERIAL PRIMARY KEY,
+  height_cm NUMERIC NOT NULL,
+  weight_kg NUMERIC NOT NULL,
+  bmi NUMERIC NOT NULL,
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

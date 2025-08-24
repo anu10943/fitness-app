@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "Fitness Mobile",
+    "slug": "fitness-mobile",
+    "scheme": "fitnessmobile",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  }
+}
