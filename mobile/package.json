@@ -9,12 +9,14 @@
     "ios": "expo run:ios"
   },
   "dependencies": {
-    "expo": "~51.0.0",
-    "expo-haptics": "~13.0.1",
-    "expo-status-bar": "~1.12.1",
-    "react": "18.2.0",
-    "react-native": "0.74.3",
     "@react-navigation/native": "^6.1.11",
-    "@react-navigation/native-stack": "^6.9.20"
+    "@react-navigation/native-stack": "^6.9.20",
+    "expo": "53.0.22",
+    "expo-haptics": "~14.1.4",
+    "expo-status-bar": "~2.2.3",
+    "react": "19.0.0",
+    "react-native": "0.79.5",
+    "react-native-safe-area-context": "5.4.0",
+    "react-native-screen": "^1.0.1"
   }
 }

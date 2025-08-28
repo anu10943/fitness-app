@@ -6,6 +6,9 @@
     "platforms": [
       "ios",
       "android"
-    ]
+    ],
+    "android": {
+      "package": "com.anonymous.fitnessmobile"
+    }
   }
 }
